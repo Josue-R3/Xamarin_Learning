@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor_cm_a_m.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout BackgroundColor="#FFE5B8">
+        <Label Text="Conversor"
+               FontSize="40"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,10,0,0" />
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="20,10,20,20"
+               CornerRadius="20"
+               HasShadow="False">
+            <StackLayout VerticalOptions="Center"
+                         Spacing="20">
+                <Image Source="cinta_transp.png"></Image>
+                <Label Text="(cm) a (mts)"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                       HorizontalOptions="Center"></Label>
+                <Button Text="Iniciar"
+                        TextTransform="None"
+                        FontAttributes="Bold"
+                        BackgroundColor="#FFDE84"
+                        CornerRadius="10"
+                        FontSize="Medium"
+                        x:Name="btn_iniciar"
+                        Clicked="btn_iniciar_Clicked" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
+

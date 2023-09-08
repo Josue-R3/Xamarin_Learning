@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor_cm_a_m.Vistas.Conversor"
+             NavigationPage.HasNavigationBar="False"
+             Visual="Material">
+    <Grid BackgroundColor="#FFDD7F">
+        <StackLayout VerticalOptions="Center"
+                     Margin="20"
+                     Spacing="30">
+            <Image Source="cinta_transp.png"></Image>
+            <Frame CornerRadius="20"
+                   HasShadow="False">
+                <Entry Keyboard="Numeric"
+                       Placeholder="Centimetros (cm)"
+                       TextColor="Black"
+                       PlaceholderColor="Green"
+                       FontSize="Large"
+                       x:Name="txtcm"></Entry>
+            </Frame>
+            <Button Text="Calcular"
+                    CornerRadius="15"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextTransform="None"
+                    BackgroundColor="#7053D3"
+                    TextColor="White"
+                    x:Name="btn_calcular"
+                    Clicked="btn_calcular_Clicked"></Button>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Resultado:"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       VerticalOptions="Center"></Label>
+                <Label Text="0.00"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       VerticalOptions="Center"
+                       x:Name="lb_result"></Label>
+            </StackLayout>
+            <Button Text="Volver"
+                    TextTransform="None"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    CornerRadius="10"
+                    x:Name="btn_volver"
+                    Clicked="btn_volver_Clicked"></Button>
+        </StackLayout>
+    </Grid>
+</ContentPage>
